@@ -1,0 +1,57 @@
+#ifndef INC_CSDL_H_
+#define INC_CSDL_H_
+
+// Định nghĩa các chân đầu vào
+#define I0_0_PIN GPIO_PIN_
+#define I0_1_PIN GPIO_PIN_
+#define I0_2_PIN GPIO_PIN_
+#define I0_3_PIN GPIO_PIN_
+#define I0_4_PIN GPIO_PIN_
+#define I0_5_PIN GPIO_PIN_
+#define I0_6_PIN GPIO_PIN_
+#define I0_7_PIN GPIO_PIN_
+#define I1_0_PIN GPIO_PIN_
+#define I1_1_PIN GPIO_PIN_
+#define I1_3_PIN GPIO_PIN_
+
+// Định nghĩa các port đầu vào
+#define I0_0_PORT GPIO
+#define I0_1_PORT GPIO
+#define I0_2_PORT GPIO
+#define I0_3_PORT GPIO
+#define I0_4_PORT GPIO
+#define I0_5_PORT GPIO
+#define I0_6_PORT GPIO
+#define I0_7_PORT GPIO
+#define I1_0_PORT GPIO
+#define I1_1_PORT GPIO
+#define I1_3_PORT GPIO
+
+// Định nghĩa các chân đầu ra
+#define Q0_0_PIN GPIO_PIN_
+
+// Định nghĩa các port đầu ra
+#define Q0_0_PORT GPIO
+
+// Khai báo biến đầu vào
+uint16_t I0_0;
+uint16_t I0_1;
+uint16_t I0_2;
+uint16_t I0_3;
+uint16_t I0_4;
+uint16_t I0_5;
+uint16_t I0_6;
+uint16_t I0_7;
+uint16_t I1_0;
+uint16_t I1_1;
+uint16_t I1_3;
+
+// Khai báo biến đầu ra
+uint16_t Q0_0;
+
+// Khai báo biến trung gian
+
+void read_Pin_Input();       // đọc các chân đầu vào
+void write_Pin_Output();     // viết các chân đầu ra
+
+#endif

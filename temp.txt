@@ -1,0 +1,13 @@
+
+// Khởi tạo biến đếm phục vụ cho các bộ timer, counter
+uint32_t dem = 0;
+
+// Bộ timer chính phục vụ cho các bộ timer, sườn lên, sườn xuống
+void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim){
+
+	if(htim->Instance == htim11.Instance){
+
+		dem++;
+
+	}
+}

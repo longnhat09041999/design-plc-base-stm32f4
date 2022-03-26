@@ -1,0 +1,31 @@
+
+
+// đọc các chân đầu vào
+
+void read_Pin_Input(){
+	I0_0 = !HAL_GPIO_ReadPin(I0_0_PORT, I0_0_PIN);
+	I0_1 = !HAL_GPIO_ReadPin(I0_1_PORT, I0_1_PIN);
+	I0_2 = !HAL_GPIO_ReadPin(I0_2_PORT, I0_2_PIN);
+	I0_3 = !HAL_GPIO_ReadPin(I0_3_PORT, I0_3_PIN);
+	I0_4 = !HAL_GPIO_ReadPin(I0_4_PORT, I0_4_PIN);
+	I0_5 = !HAL_GPIO_ReadPin(I0_5_PORT, I0_5_PIN);
+	I0_6 = !HAL_GPIO_ReadPin(I0_6_PORT, I0_6_PIN);
+	I0_7 = !HAL_GPIO_ReadPin(I0_7_PORT, I0_7_PIN);
+	I1_0 = !HAL_GPIO_ReadPin(I1_0_PORT, I1_0_PIN);
+	I1_1 = !HAL_GPIO_ReadPin(I1_1_PORT, I1_1_PIN);
+	I1_3 = !HAL_GPIO_ReadPin(I1_3_PORT, I1_3_PIN);
+
+}
+
+
+// đọc các chân đầu ra
+
+void write_Pin_Output(){
+	if(Q0_0 == 1){
+		HAL_GPIO_WritePin(Q0_0_PORT, Q0_0_PIN, ENABLE);
+		}
+	else{
+		HAL_GPIO_WritePin(Q0_0_PORT, Q0_0_PIN, DISABLE);
+	}
+
+}
